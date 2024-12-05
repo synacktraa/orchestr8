@@ -2,6 +2,7 @@ from os import environ as env
 from pathlib import Path
 
 DOT_ORCHESTR8 = Path.home() / ".orchestr8"
+DOT_ORCHESTR8.mkdir(exist_ok=True)
 MKCERT_LOCALHOST_SSL_CERT_FILE = DOT_ORCHESTR8 / "mkcert-localhost.pem"
 """The certificate file for localhost."""
 MKCERT_LOCALHOST_SSL_PKEY_FILE = DOT_ORCHESTR8 / "mkcert-localhost-key.pem"
