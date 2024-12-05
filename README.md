@@ -40,11 +40,8 @@ For more on optional dependencies, refer the [installation guide](https://synack
 Collection of cookbooks showcasing the power of orchestr8 library in Language Model workflows.
 
 - [Running LLM-generated code](https://synacktra.is-a.dev/orchestr8/cookbooks/running-llm-generated-code/): Executing LLM-generated code in a controlled, isolated virtual environments.
-
 - [Function-Calling automation](https://synacktra.is-a.dev/orchestr8/cookbooks/function-calling-automation/): Automated approach to working with function-calling workflows.
-
 - [Version Control & Function-Calling](https://synacktra.is-a.dev/orchestr8/cookbooks/version-control-and-function-calling/): Safe and controlled file system interactions through function-calling.
-
 - [Authentication & Function-Calling](https://synacktra.is-a.dev/orchestr8/cookbooks/authentication-and-function-calling/): OAuth Flow and connecting with APIs through function-calling.
 
 ## Tutorials
@@ -60,4 +57,4 @@ Collection of cookbooks showcasing the power of orchestr8 library in Language Mo
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/synacktraa/tool-parse/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/synacktraa/orchestr8/issues).
