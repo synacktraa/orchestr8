@@ -3,7 +3,7 @@ from sys import version_info
 from typing import Callable, Generic, TypeVar
 
 if version_info >= (3, 10):
-    from typing import ParamSpec
+    from typing import ParamSpec  # type: ignore[attr-defined]
 else:
     from typing_extensions import ParamSpec  # type: ignore[assignment]
 
@@ -16,7 +16,7 @@ P_Spec = ParamSpec("P_Spec")
 T_Retval = TypeVar("T_Retval")
 
 
-class FunctionAdapter(StructAdapter[T_Retval], Generic[P_Spec, T_Retval]):
+class FunctionAdapter(StructAdapter[T_Retval], Generic[P_Spec, T_Retval]):  # type: ignore[misc]
     """
     A specialized adapter for Python functions, extending StructAdapter to handle function-specific type hints.
 
@@ -66,7 +66,7 @@ class FunctionAdapter(StructAdapter[T_Retval], Generic[P_Spec, T_Retval]):
     ref_type = "function"
     validate_ref = lambda c, r: isfunction(r)
 
-    def __init__(self, __fn: Callable[P_Spec, T_Retval]) -> None:
+    def __init__(self, __fn: Callable[P_Spec, T_Retval]) -> None:  # type: ignore[valid-type]
         """
         Args:
             __fn: The function to create adapter from
@@ -76,5 +76,5 @@ class FunctionAdapter(StructAdapter[T_Retval], Generic[P_Spec, T_Retval]):
         """
         super().__init__(__fn)  # type: ignore[arg-type]
 
-    def __call__(self, *args: P_Spec.args, **kwargs: P_Spec.kwargs) -> T_Retval:
+    def __call__(self, *args: P_Spec.args, **kwargs: P_Spec.kwargs) -> T_Retval:  # type: ignore[name-defined]
         return super().__call__(*args, **kwargs)

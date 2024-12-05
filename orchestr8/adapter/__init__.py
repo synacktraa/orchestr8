@@ -8,7 +8,7 @@ __all__ = ("adapt",)
 
 
 @overload
-def adapt(__obj: Callable[P_Spec, T_Retval]) -> FunctionAdapter[P_Spec, T_Retval]:
+def adapt(__obj: Callable[P_Spec, T_Retval]) -> FunctionAdapter[P_Spec, T_Retval]:  # type: ignore[type-arg,valid-type]
     """
     Create an adapter from a function.
 
@@ -23,9 +23,9 @@ def adapt(__obj: Callable[P_Spec, T_Retval]) -> FunctionAdapter[P_Spec, T_Retval
 
 
 @overload
-def adapt(__obj: Type[T_Retval]) -> StructAdapter[T_Retval]:
+def adapt(__obj: Type[T_Retval]) -> StructAdapter[T_Retval]:  # type: ignore[overload-cannot-match]
     """
-    Create an adapter from a complex type such as Pydantic Model, TypedDict, dataclass, etc.
+    Create an adapter from a structured type such as Pydantic Model, TypedDict, dataclass, etc.
 
     Refer`orchestr8.adapter.struct.StructAdapter` for more details.
 
@@ -39,7 +39,7 @@ def adapt(__obj: Type[T_Retval]) -> StructAdapter[T_Retval]:
 
 def adapt(__obj: Any) -> Any:
     """
-    Create an adapter from a function or complex type such as
+    Create an adapter from a function or structured type such as
     Pydantic Model, TypedDict, dataclass, etc.
 
     ```python
