@@ -43,9 +43,9 @@ Collection of cookbooks showcasing the power of orchestr8 library in Language Mo
 
 - [Function-Calling automation](https://synacktra.is-a.dev/orchestr8/cookbooks/function-calling-automation/): Automated approach to working with function-calling workflows.
 
-- [Version Control & Function-Calling](https://synacktra.is-a.dev/orchestr8/cookbooks/version-control-%26-function-calling/): Safe and controlled file system interactions through function-calling.
+- [Version Control & Function-Calling](https://synacktra.is-a.dev/orchestr8/cookbooks/version-control-and-function-calling/): Safe and controlled file system interactions through function-calling.
 
-- [Authentication & Function-Calling](https://synacktra.is-a.dev/orchestr8/cookbooks/authentication-%26-function-calling/): OAuth Flow and connecting with APIs through function-calling.
+- [Authentication & Function-Calling](https://synacktra.is-a.dev/orchestr8/cookbooks/authentication-and-function-calling/): OAuth Flow and connecting with APIs through function-calling.
 
 ## Tutorials
 
