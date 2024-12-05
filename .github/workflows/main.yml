@@ -32,8 +32,6 @@ jobs:
           git config --global user.name "GitHub Actions"
 
       - name: Run tests
-        env:
-          ORCHESTR8_RUNTIME_DIR: /var
         run: uv run python -m pytest tests --cov --cov-config=pyproject.toml --cov-report=xml
 
       - name: Check typing
