@@ -61,7 +61,7 @@ from pathlib import Path
 from tempfile import tempdir
 
 directory = Path(tempdir) / "orchestr8-tracking" # We'll be working inside this directory
-directory.mkdir()
+directory.mkdir(exist_ok=True)
 
 tracker = o8.DirectoryTracker(path=directory)
 

@@ -1,6 +1,6 @@
 [project]
 name = "orchestr8"
-version = "0.0.2"
+version = "0.0.3"
 description = "A versatile collection of independent components crafted to simplify task automation, particularly for AI workflows."
 authors = [{ name = "Harsh Verma", email = "synacktra.work@gmail.com" }]
 readme = "README.md"
@@ -81,6 +81,10 @@ cookbooks = [
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["orchestr8*"]
+
+[tool.setuptools]
+include-package-data = true
+package-data = {"orchestr8" = ["**/*.txt"]}
 
 [tool.mypy]
 files = ["orchestr8"]
