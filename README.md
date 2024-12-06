@@ -55,6 +55,8 @@ Collection of cookbooks showcasing the power of orchestr8 library in Language Mo
 
 ---
 
+> Most of the components are inspired by the [GoEX arXiv paper](https://arxiv.org/pdf/2404.06921), where the authors discuss "post-facto validation"—verifying the correctness of a proposed action after seeing the output—as significantly more straightforward compared to the "pre-facto validation" setting.
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/synacktraa/orchestr8/issues).
